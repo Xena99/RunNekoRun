@@ -81,7 +81,7 @@ void UNekoCharacter::VaultOrClimb()
 	GetWorld()->LineTraceSingleByObjectType(Hit, Start, End, ObjectsToTrace, ActorsToIgnore);
 	if (Hit.Component == nullptr)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("No Hit Component Found"));
+		UE_LOG(LogTemp, Warning, TEXT("First Trace Failed"));
 		//no wall detected
 		return;
 	}
@@ -112,11 +112,10 @@ void UNekoCharacter::VaultOrClimb()
 
 	WallThickness = WallHeight - WallHeight2;
 
-	UE_LOG(LogTemp, Warning, TEXT("Heihgt: %f Thickness: %f"), WallHeight.Z, WallThickness.Z);
+	UE_LOG(LogTemp, Warning, TEXT("Height: %f Thickness: %f"), WallHeight.Z, WallThickness.Z);
 
 	if (fabs(WallHeight.Z) <= VaultHeightThreshold && fabs(WallThickness.Z) <= VaultWidthThreshold)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Vaulting"));
 
 		//CharacterOwner->GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 		CharacterOwner->GetCharacterMovement()->SetMovementMode(MOVE_Flying);

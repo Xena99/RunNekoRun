@@ -8,7 +8,18 @@ public class RunNekoRun : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "EnhancedInput", "Landscape" });
+        PublicDependencyModuleNames.AddRange(new string[] { 
+            "Core", 
+            "CoreUObject", 
+            "Engine", 
+            "InputCore", 
+            "HeadMountedDisplay", 
+            "EnhancedInput", 
+            "Landscape",
+            "AIModule",
+            "NavigationSystem",
+            "GameplayTasks"
+        });
         bEnableExceptions = true;
     }
 }
