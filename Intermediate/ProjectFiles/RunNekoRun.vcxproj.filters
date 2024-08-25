@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\RunNekoRun.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\RunNekoRun.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\RunNekoRunEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\README.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\RunNekoRun">
+      <UniqueIdentifier>{1671FE93-A7A7-3100-A18F-42A2845C3054}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\RunNekoRun\CombatComponent.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\CombatComponent.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\Enemy_NPC.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\Enemy_NPC.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\FindPlayer_BTTask.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\FindPlayer_BTTask.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\MyNekoCharacter.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\MyNekoCharacter.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\NekoCharacter.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NekoCharacter.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\NPC_AIController.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NPC_AIController.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\RunNekoRun\RunNekoRun.Build.cs">
+      <Filter>Source\RunNekoRun</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\RunNekoRun\RunNekoRun.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\RunNekoRun.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\RunNekoRunCharacter.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\RunNekoRunCharacter.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\RunNekoRunGameMode.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\RunNekoRunGameMode.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

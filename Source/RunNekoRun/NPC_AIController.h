@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "AIController.h"
 #include "Enemy_NPC.h"
+#include "Perception/AIPerceptionTypes.h"
+#include "Perception/AIPerceptionComponent.h"
 #include "NPC_AIController.generated.h"
 
 /**
@@ -21,4 +23,12 @@ public:
 
 protected:
 	virtual void OnPossess(APawn* InPawn) override;
+
+private:
+	//Configure Sight Sense
+	class UAISenseConfig_Sight* SightConfig;
+	void SetUpAIPerceptionSystem();
+
+	UFUNCTION()
+	void OnTargetDetected(AActor* Actor, FAIStimulus Stimulus);
 };
