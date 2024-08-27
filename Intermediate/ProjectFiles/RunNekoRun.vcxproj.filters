@@ -37,6 +37,12 @@
     <Filter Include="Source\RunNekoRun">
       <UniqueIdentifier>{1671FE93-A7A7-3100-A18F-42A2845C3054}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTService_ChangeSpeed.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTService_ChangeSpeed.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\BTTask_ChasePlayer.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
@@ -47,6 +53,12 @@
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPlayerLocation.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPlayerLocation.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.cpp">

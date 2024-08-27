@@ -17,14 +17,12 @@ UBTTask_ChasePlayer::UBTTask_ChasePlayer(FObjectInitializer const& ObjectInitial
 
 EBTNodeResult::Type UBTTask_ChasePlayer::ExecuteTask(UBehaviorTreeComponent& Comp, uint8* NodeMemory)
 {
-	if(auto const* NPC_Controller = Cast<ANPC_AIController>(Comp.GetAIOwner()))
+	if(auto* NPC_Controller = Cast<ANPC_AIController>(Comp.GetAIOwner()))
 	{
-		auto const PlayerController = UGameplayStatics::GetPlayerController(GetWorld(),
-										0);
-		FVector const PlayerLocation = PlayerController->GetPawn()->GetActorLocation();
-		if(UNavigationSystemV1* NavMesh = UNavigationSystemV1::GetCurrent(GetWorld()))
+		if(auto const* BlackboardComponent = Cast<UBlackboardComponent>(NPC_Controller->GetBlackboardComponent()))
 		{
-			UAIBlueprintHelperLibrary::SimpleMoveToLocation(PlayerController,PlayerLocation);
+			FVector const PlayerLocation = BlackboardComponent->GetValueAsVector(GetSelectedBlackboardKey());
+			UAIBlueprintHelperLibrary::SimpleMoveToLocation(NPC_Controller,PlayerLocation);
 			//Finish
 			FinishLatentTask(Comp, EBTNodeResult::Succeeded);
 			return EBTNodeResult::Succeeded;
