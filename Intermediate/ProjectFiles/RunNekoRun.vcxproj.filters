@@ -15,6 +15,7 @@
     <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <None Include="..\..\README.md" />
+    <None Include="..\..\RunNekoRun.sln.DotSettings.user" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -42,22 +43,22 @@
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_ChasePlayer.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.cpp">
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.h">
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\CombatComponent.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\CombatComponent.h">
-      <Filter>Source\RunNekoRun</Filter>
-    </ClInclude>
-    <ClCompile Include="..\..\Source\RunNekoRun\Enemy_NPC.cpp">
-      <Filter>Source\RunNekoRun</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\Enemy_NPC.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\MyNekoCharacter.cpp">
@@ -72,16 +73,22 @@
     <ClInclude Include="..\..\Source\RunNekoRun\NekoCharacter.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\NPC.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NPC.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\NPC_AIController.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\NPC_AIController.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.cpp">
+    <ClCompile Include="..\..\Source\RunNekoRun\PatrolPath.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.h">
+    <ClInclude Include="..\..\Source\RunNekoRun\PatrolPath.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <None Include="..\..\Source\RunNekoRun\RunNekoRun.Build.cs">

@@ -1,10 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Enemy_NPC.h"
+#include "NPC.h"
 
 // Sets default values
-AEnemy_NPC::AEnemy_NPC()
+ANPC::ANPC()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
@@ -12,29 +12,34 @@ AEnemy_NPC::AEnemy_NPC()
 }
 
 // Called when the game starts or when spawned
-void AEnemy_NPC::BeginPlay()
+void ANPC::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AEnemy_NPC::Tick(float DeltaTime)
+void ANPC::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
 // Called to bind functionality to input
-void AEnemy_NPC::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void ANPC::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
 
-UBehaviorTree* AEnemy_NPC::GetBehaviorTree() const
+UBehaviorTree* ANPC::GetBehaviorTree() const
 {
 	return Tree;
+}
+
+APatrolPath* ANPC::GetPatrolPath() const
+{
+	return PatrolPath;
 }
 
 

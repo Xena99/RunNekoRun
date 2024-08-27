@@ -19,7 +19,7 @@ void ANPC_AIController::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
 		
-	if (AEnemy_NPC* EnemyNPC = Cast<AEnemy_NPC>(InPawn))
+	if (ANPC* EnemyNPC = Cast<ANPC>(InPawn))
 	{
 		if (UBehaviorTree* Tree = EnemyNPC->GetBehaviorTree())
 		{

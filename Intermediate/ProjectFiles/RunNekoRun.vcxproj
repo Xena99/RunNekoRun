@@ -113,6 +113,7 @@
     <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
     <None Include="..\..\README.md"/>
+    <None Include="..\..\RunNekoRun.sln.DotSettings.user"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
@@ -124,24 +125,24 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_ChasePlayer.h"/>
-    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.cpp">
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.h"/>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.h"/>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.h"/>
     <ClCompile Include="..\..\Source\RunNekoRun\CombatComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\CombatComponent.h"/>
-    <ClCompile Include="..\..\Source\RunNekoRun\Enemy_NPC.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\Enemy_NPC.h"/>
     <ClCompile Include="..\..\Source\RunNekoRun\MyNekoCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -154,18 +155,24 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\NekoCharacter.h"/>
+    <ClCompile Include="..\..\Source\RunNekoRun\NPC.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NPC.h"/>
     <ClCompile Include="..\..\Source\RunNekoRun\NPC_AIController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\NPC_AIController.h"/>
-    <ClCompile Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.cpp">
+    <ClCompile Include="..\..\Source\RunNekoRun\PatrolPath.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClInclude Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.h"/>
+    <ClInclude Include="..\..\Source\RunNekoRun\PatrolPath.h"/>
     <None Include="..\..\Source\RunNekoRun\RunNekoRun.Build.cs"/>
     <ClCompile Include="..\..\Source\RunNekoRun\RunNekoRun.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
