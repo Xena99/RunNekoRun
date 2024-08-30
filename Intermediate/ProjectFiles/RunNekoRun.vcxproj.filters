@@ -55,6 +55,12 @@
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPatrolPath.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_FindPlayer.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\BTTask_FindPlayerLocation.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
@@ -67,10 +73,22 @@
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_Play_Animation.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_Play_Animation.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\CombatComponent.cpp">
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\CombatComponent.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\FindPlayerLocation_BTTask.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\FindPlayerLocation_BTTask.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\MyNekoCharacter.cpp">
@@ -95,6 +113,12 @@
       <Filter>Source\RunNekoRun</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\NPC_AIController.h">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.cpp">
+      <Filter>Source\RunNekoRun</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\NPC_Patrol_BTTask_BlackboardBase.h">
       <Filter>Source\RunNekoRun</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\RunNekoRun\PatrolPath.cpp">

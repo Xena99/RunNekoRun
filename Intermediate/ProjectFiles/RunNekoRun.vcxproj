@@ -149,6 +149,12 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\RunNekoRun\BTTask_IncrementPatrolIndex.h"/>
+    <ClCompile Include="..\..\Source\RunNekoRun\BTTask_Play_Animation.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\RunNekoRun\BTTask_Play_Animation.h"/>
     <ClCompile Include="..\..\Source\RunNekoRun\CombatComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>

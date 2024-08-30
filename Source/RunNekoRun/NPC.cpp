@@ -3,12 +3,17 @@
 
 #include "NPC.h"
 
+#include "GameFramework/CharacterMovementComponent.h"
+
 // Sets default values
 ANPC::ANPC()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	if(UCharacterMovementComponent* CharacterMovementComponent = this->GetCharacterMovement())
+	{
+		CharacterMovementComponent->NavAgentProps.bCanWalk = true;
+	}
 }
 
 // Called when the game starts or when spawned
